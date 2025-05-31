@@ -108,14 +108,7 @@ const Header = () => {
           isMenuOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
         }`}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1">
-          <Link
-            to="/"
-            className={`block w-full px-3 py-2 rounded-md text-base font-medium bg-yellow-400 text-black hover:bg-yellow-300 hover:text-black transition-colors duration-200`}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Products
-          </Link>
+        <div className="px-2 pt-2 pb-3 space-y-1"> 
           <Link
             to="/favorites"
             className={`block w-full px-3 py-2 rounded-md text-base font-medium bg-yellow-400 text-black hover:bg-yellow-300 hover:text-black transition-colors duration-200 flex items-center`}

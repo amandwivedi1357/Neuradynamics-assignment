@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Heart, ShoppingBag } from 'lucide-react';
+
 import { selectAllFavorites, clearAllFavorites } from '../features/favorites/favoritesSlice';
 import ProductGrid from '../components/products/ProductGrid';
 import { useDispatch, useSelector } from 'react-redux';
@@ -26,7 +25,7 @@ const FavoritesPage = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 pb-12 pt-24">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 border-b border-gray-800 pb-6">
           <div>
             <h1 className="text-3xl font-bold mb-2">Your Favorites</h1>
@@ -45,7 +44,7 @@ const FavoritesPage = () => {
           )}
         </div>
         
-        <div className="pt-6">
+        <div className="">
           <ProductGrid products={favorites} isLoading={false} error={null} />
         </div>
       </div>
