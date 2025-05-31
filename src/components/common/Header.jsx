@@ -38,12 +38,7 @@ const Header = () => {
       : 'bg-black py-5'
   }`;
 
-  const navLinkClass = (path) => 
-    `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-      location.pathname === path 
-        ? 'text-blue-600' 
-        : 'text-gray-700 hover:text-blue-600'
-    }`;
+ 
 
   return (
     <header className={headerClass}>
@@ -94,9 +89,9 @@ const Header = () => {
             >
               <span className="sr-only">Open main menu</span>
               {isMenuOpen ? (
-                <X className="block h-6 w-6 text-gray-700" />
+                <X className="block h-6 w-6 text-yellow-400" />
               ) : (
-                <Menu className="block h-6 w-6 text-gray-700" />
+                <Menu className="block h-6 w-6 text-yellow-400" />
               )}
             </button>
           </div>

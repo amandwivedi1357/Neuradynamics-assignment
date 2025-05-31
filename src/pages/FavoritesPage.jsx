@@ -28,7 +28,7 @@ const FavoritesPage = () => {
       <div className="container mx-auto px-4 pb-12 pt-24">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 border-b border-gray-800 pb-6">
           <div>
-            <h1 className="text-3xl font-bold mb-2">Your Favorites</h1>
+            <h1 className="text-3xl text-gray-400 font-bold mb-2">Your Favorites</h1>
             <p className="text-gray-400">
               {favorites.length} {favorites.length === 1 ? 'item' : 'items'}
             </p>
